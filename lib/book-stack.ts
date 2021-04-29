@@ -5,7 +5,7 @@ export class BookStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
     removableBucket(this, "bookBucket", {
-      bucketName: "hiroga-book-bucket",
+      bucketName: "hiroga-books",
     });
   }
 }
