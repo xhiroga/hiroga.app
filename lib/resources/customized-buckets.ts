@@ -7,10 +7,9 @@ export const removableBucket = (
   props: BucketProps
 ): Bucket => {
   return new Bucket(scope, id, {
-    publicReadAccess: false,
+    encryption: BucketEncryption.S3_MANAGED,
     removalPolicy: RemovalPolicy.DESTROY,
     versioned: true,
-    encryption: BucketEncryption.S3_MANAGED,
     ...props,
   });
 };
