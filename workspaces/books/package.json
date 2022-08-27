@@ -1,5 +1,6 @@
 {
   "name": "books",
+  "license": "UNLICENSED",
   "version": "0.1.0",
   "bin": {
     "books": "bin/books.js"
